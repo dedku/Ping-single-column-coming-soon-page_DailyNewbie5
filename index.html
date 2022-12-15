@@ -14,20 +14,24 @@
 
 <body>
   <main class="content">
-    <img src="./images/logo.svg" alt="logo">
+    <img class="logo" src="./images/logo.svg" alt="logo">
 
-    <h1>
-      We are launching soon!
-    </h1>
+    <div class="title">
+      <h1 class="gray-text">
+        We are launching
+      </h1>
+      <h1 class="soon-text">
+        soon!
+      </h1>
+    </div>
 
-    <h2>
+    <h2 class="h2-text">
       Subscribe and get notified
     </h2>
 
-    <form>
+    <form class="form">
       <div class="form-control">
-        <input type="text" required>
-        <label>Email</label>
+        <input class="form-input" type="email" placeholder="Yor email address...">
       </div>
 
       <button class="cta">
@@ -35,16 +39,27 @@
       </button>
     </form>
 
-    <img src="./images/illustration-dashboard.png" alt="illustration dashboard">
+    <div class="error-massage"></div>
+
+    <img class="dashboard" src="./images/illustration-dashboard.png" alt="illustration dashboard">
 
   </main>
   <footer>
+    <div class="socials">
+      <a href="#"><ion-icon class="logos" name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon class="logos" name="logo-twitter"></ion-icon></a>
+      <a href="#"><ion-icon class="logos" name="logo-instagram"></ion-icon></a>
+    </div>
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/profile/dedku">Patryk Sz</a>.
     </p>
   </footer>
+
+  <script src="./src/main.ts" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

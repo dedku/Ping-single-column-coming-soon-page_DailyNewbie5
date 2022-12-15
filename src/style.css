@@ -52,8 +52,154 @@ For the social icons, you can use a font icon library. Some suggestions can be f
   --font-size: 20px;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.content,
+.form,
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex-direction: column;
+  gap: 10px;
+  width: 700px;
+  margin: 80px auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gray-text {
+  color: var(--neutral-gray);
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.soon-text {
+  margin-bottom: 0px;
+}
+
+.h2-text {
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.form {
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-input {
+  font-size: 15px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 30px;
+  border: 1px solid var(--secoundary-blue);
+  transition: .3s ease;
+}
+
+.form-input:focus {
+  outline: 0;
+  border: 1px solid var(--primary-blue);
+  transition: .3s ease;
+}
+
+.form-input:invalid {
+  border: 1px solid red;
+  background-repeat: no-repeat;
+  background-position: 75% 25%;
+}
+
+.cta {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  width: 35%;
+  background-color: var(--primary-blue);
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 3px var(--neutral-gray);
+  transition: .3s ease;
+}
+
+.cta:hover,
+.logos:hover {
+  box-shadow: 0 0 8px var(--neutral-blue);
+  transition: .3s ease;
+}
+
+.cta:active {
+  background-color: var(--neutral-blue);
+  transition: .3s ease;
+}
+
+.error-massage {
+  color: var(--secoundary-red);
+  width: 100%;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.dashboard {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.socials {
+  flex-direction: row;
+  gap: 20px;
+}
+
+.logos {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 50%;
+  color: var(--primary-blue);
+  transition: .3s ease;
 }
 
 .attribution {
@@ -63,4 +209,14 @@ a {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
 }
