@@ -1,4 +1,4 @@
-/* # Front-end Style Guide
+# Front-end Style Guide
 
 ## Layout
 
@@ -40,27 +40,4 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com) */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-
-:root {
-  --primary-blue: hsl(223, 87%, 63%);
-  --secoundary-blue: hsl(223, 100%, 88%);
-  --secoundary-red: hsl(354, 100%, 66%);
-  --neutral-gray: hsl(0, 0%, 59%);
-  --neutral-blue: hsl(209, 33%, 12%);
-  --font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+- [Ionicons](https://ionicons.com)
